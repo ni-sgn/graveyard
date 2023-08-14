@@ -1,0 +1,15 @@
+/home/disco/src/personal/playground/csharp/httpclient/src/bin/Debug/net6.0/Main
+/home/disco/src/personal/playground/csharp/httpclient/src/bin/Debug/net6.0/Main.deps.json
+/home/disco/src/personal/playground/csharp/httpclient/src/bin/Debug/net6.0/Main.runtimeconfig.json
+/home/disco/src/personal/playground/csharp/httpclient/src/bin/Debug/net6.0/Main.dll
+/home/disco/src/personal/playground/csharp/httpclient/src/bin/Debug/net6.0/Main.pdb
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.csproj.AssemblyReference.cache
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.GeneratedMSBuildEditorConfig.editorconfig
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.AssemblyInfoInputs.cache
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.AssemblyInfo.cs
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.csproj.CoreCompileInputs.cache
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.dll
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/refint/Main.dll
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.pdb
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/Main.genruntimeconfig.cache
+/home/disco/src/personal/playground/csharp/httpclient/src/obj/Debug/net6.0/ref/Main.dll
