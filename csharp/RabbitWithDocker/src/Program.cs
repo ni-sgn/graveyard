@@ -2,6 +2,7 @@
 using RabbitMQ.Client;
 using AutoMapper;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace program;
 
@@ -18,5 +19,11 @@ public class Program
         var con   = conFactory.CreateConnection();
         var model = con.CreateModel();
 
+        model.ExchangeDeclare("exchange1", "fanout", true, false, null);
+        var queue1 = model.QueueDeclare("queue1", true, false, false, null);
+        //model.QueueBind("queue1", "exchange1", "route", null);
+
+        var body = Encoding.UTF8.GetBytes("Hello rabbit, I'm here");
+        model.BasicPublish(string.Empty, "queue1", null, body);
     }
 }
