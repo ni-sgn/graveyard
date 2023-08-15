@@ -22,3 +22,5 @@
 # I had to find out what's the location for rabbit-server itself, whose port
 # I did not publish. To do that I had to get all the info about container:
     sudo docker container inspect container_name
+# Good info about how containers communicate
+    https://linuxhandbook.com/get-container-ip/
