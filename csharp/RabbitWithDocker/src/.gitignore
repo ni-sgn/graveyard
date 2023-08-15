@@ -454,5 +454,4 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 ## Some other stuff
-*.pdb
 *.dll
