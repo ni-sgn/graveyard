@@ -1,0 +1,15 @@
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/bin/Debug/net6.0/RabbitDocker
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/bin/Debug/net6.0/RabbitDocker.deps.json
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/bin/Debug/net6.0/RabbitDocker.runtimeconfig.json
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/bin/Debug/net6.0/RabbitDocker.dll
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/bin/Debug/net6.0/RabbitDocker.pdb
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.csproj.AssemblyReference.cache
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.GeneratedMSBuildEditorConfig.editorconfig
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.AssemblyInfoInputs.cache
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.AssemblyInfo.cs
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.csproj.CoreCompileInputs.cache
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.dll
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/refint/RabbitDocker.dll
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.pdb
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/RabbitDocker.genruntimeconfig.cache
+/home/disco/src/personal/playground/csharp/RabbitWithDocker/src/obj/Debug/net6.0/ref/RabbitDocker.dll
