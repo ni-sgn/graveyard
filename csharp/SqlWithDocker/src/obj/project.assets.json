@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Dapper/2.0.143": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dapper/2.0.143": {
+      "sha512": "Vh0U+Fins3IpS7APUlrzga3+1mswWngB5fZ0xj4w+FQR5JhJzA5uHV5rSepkahvmshNZUA0YcHtae9vFQpiVTw==",
+      "type": "package",
+      "path": "dapper/2.0.143",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.143.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "dapper >= 2.0.143"
+    ]
+  },
+  "packageFolders": {
+    "/home/disco/.nuget/packages/": {},
+    "/home/disco/.local/share/godot/mono/GodotNuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/SqlDocker.csproj",
+      "projectName": "SqlDocker",
+      "projectPath": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/SqlDocker.csproj",
+      "packagesPath": "/home/disco/.nuget/packages/",
+      "outputPath": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/home/disco/.local/share/godot/mono/GodotNuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/home/disco/.nuget/NuGet/NuGet.Config",
+        "/home/disco/.nuget/NuGet/config/Godot.Offline.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "dapper": {
+            "target": "Package",
+            "version": "[2.0.143, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/disco/.dotnet/sdk/6.0.411/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

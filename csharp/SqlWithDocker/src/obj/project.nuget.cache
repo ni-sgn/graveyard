@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vUnb0TvOcxZfaFusyPjEBMyy08epeDU4cfAy//DknRF9w+jCfvVDTKRXvldaZD9x5zKge9mh/Do3uRrWJal++A==",
+  "success": true,
+  "projectFilePath": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/SqlDocker.csproj",
+  "expectedPackageFiles": [
+    "/home/disco/.nuget/packages/dapper/2.0.143/dapper.2.0.143.nupkg.sha512"
+  ],
+  "logs": []
+}

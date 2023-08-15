@@ -1,0 +1,17 @@
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.csproj.AssemblyReference.cache
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.GeneratedMSBuildEditorConfig.editorconfig
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.AssemblyInfoInputs.cache
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.AssemblyInfo.cs
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.csproj.CoreCompileInputs.cache
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/bin/Debug/net6.0/SqlDocker
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/bin/Debug/net6.0/SqlDocker.deps.json
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/bin/Debug/net6.0/SqlDocker.runtimeconfig.json
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/bin/Debug/net6.0/SqlDocker.dll
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/bin/Debug/net6.0/SqlDocker.pdb
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.dll
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/refint/SqlDocker.dll
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.pdb
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.genruntimeconfig.cache
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/ref/SqlDocker.dll
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/bin/Debug/net6.0/Dapper.dll
+/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/Debug/net6.0/SqlDocker.csproj.CopyComplete
