@@ -36,3 +36,8 @@
 # Upstream branch is a remote branch hosted on Github or Bitbucket, it's the branch that is fetched pulled without arguments
 # To create an upstream branch, currently checked-out branch will track this upstream
     git push --set-upstream origin upstream-branch-name 
+
+# After pruning a remote repository the reference which was connecting to remote
+# branch is gone, then when you check out previously upstreamed branch, it will
+# see that the reference is gone(pruned), and we have to manually tell the branch not to look at upstream anymore 
+    git branch --unset-upstream
