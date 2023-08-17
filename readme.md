@@ -41,3 +41,24 @@
 # branch is gone, then when you check out previously upstreamed branch, it will
 # see that the reference is gone(pruned), and we have to manually tell the branch not to look at upstream anymore 
     git branch --unset-upstream
+
+# Reverting in git does not delete the whole commit, instead it adds a new
+# commit where the changes made in the commit are reverted. This is good, because
+# it leaves better history(breadcrumbs) of what actions took place during the development
+    git revert commit
+
+# Reset (complicated, needs repetition), basically --hard, --mix or --soft, 
+# --hard puts HEAD and main refs to specific commit, deletes rest of the commit
+# history(commit tree), also deletes everything that is staged(stage index tree) and 
+# files that are not even staged(working directory tree).
+# in case of mixed, staged changes pop out from staged intex tree to working
+# directory tree.
+# Reset does not delete commit when goig back, but rest of the commits become orphaned
+# until garbage collector runs, then they are deleted(30 days)
+    git reset --hard
+    git reset --mixed
+    git reset --soft
+
+
+# Resources
+    https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
