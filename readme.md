@@ -32,3 +32,7 @@
     git show commit-id
     git show HEAD       (last commit changes)
     git show HEAD~1     (go back 1 extra commit)
+
+# Upstream branch is a remote branch hosted on Github or Bitbucket, it's the branch that is fetched pulled without arguments
+# To create an upstream branch, currently checked-out branch will track this upstream
+    git push --set-upstream origin upstream-branch-name 
