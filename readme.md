@@ -41,6 +41,3 @@
 # branch is gone, then when you check out previously upstreamed branch, it will
 # see that the reference is gone(pruned), and we have to manually tell the branch not to look at upstream anymore 
     git branch --unset-upstream
-
-
-#this is some stupid bs
