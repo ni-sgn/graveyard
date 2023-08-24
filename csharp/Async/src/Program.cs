@@ -12,6 +12,7 @@ public class Asynchronous {
   // which I don't quite understand what that means
   // but if some continuation asks for that context, it will be
   // waiting forever, because this guy right here, is not letting it go
+  // !!!! Main takeaway, if you are calling async method, make calle also async ( Always )
   public static void Main( string[] args ) {
     WriteLine( Methods.GetModifiedAsync( "prefix" ).Result );
   }
