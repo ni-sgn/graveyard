@@ -1,21 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nick23\\src\\personal\\playground\\csharp\\RabbitWithDocker\\tests\\RabbitDockerTests.csproj": {}
+    "/home/disco/src/personal/playground/csharp/RabbitWithDocker/tests/RabbitDockerTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nick23\\src\\personal\\playground\\csharp\\RabbitWithDocker\\tests\\RabbitDockerTests.csproj": {
+    "/home/disco/src/personal/playground/csharp/RabbitWithDocker/tests/RabbitDockerTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nick23\\src\\personal\\playground\\csharp\\RabbitWithDocker\\tests\\RabbitDockerTests.csproj",
+        "projectUniqueName": "/home/disco/src/personal/playground/csharp/RabbitWithDocker/tests/RabbitDockerTests.csproj",
         "projectName": "RabbitDockerTests",
-        "projectPath": "C:\\Users\\nick23\\src\\personal\\playground\\csharp\\RabbitWithDocker\\tests\\RabbitDockerTests.csproj",
-        "packagesPath": "C:\\Users\\nick23\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nick23\\src\\personal\\playground\\csharp\\RabbitWithDocker\\tests\\obj\\",
+        "projectPath": "/home/disco/src/personal/playground/csharp/RabbitWithDocker/tests/RabbitDockerTests.csproj",
+        "packagesPath": "/home/disco/.nuget/packages/",
+        "outputPath": "/home/disco/src/personal/playground/csharp/RabbitWithDocker/tests/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/home/disco/.local/share/godot/mono/GodotNuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nick23\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/disco/.nuget/NuGet/NuGet.Config",
+          "/home/disco/.nuget/NuGet/config/Godot.Offline.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -66,7 +69,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/disco/.dotnet/sdk/6.0.411/RuntimeIdentifierGraph.json"
         }
       }
     }
