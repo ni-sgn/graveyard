@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cjkt8e8r0libj"]
+
+[ext_resource type="Script" path="res://Player.cs" id="1_orox0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57kfk"]
+size = Vector2(0.98266, 2.29032)
+
+[sub_resource type="QuadMesh" id="QuadMesh_cobgi"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pbpgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjimk"]
+size = Vector2(1162, 128)
+
+[sub_resource type="QuadMesh" id="QuadMesh_b1pym"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_orox0")
+
+[node name="Collision" type="CollisionShape2D" parent="Player"]
+position = Vector2(198, 189)
+scale = Vector2(86.5, 31)
+shape = SubResource("RectangleShape2D_57kfk")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Player"]
+position = Vector2(200, 191)
+scale = Vector2(-110.317, 59.8627)
+mesh = SubResource("QuadMesh_cobgi")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_pbpgj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(576, 474)
+shape = SubResource("RectangleShape2D_yjimk")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D"]
+position = Vector2(576.125, 454)
+scale = Vector2(1149.75, 85.75)
+mesh = SubResource("QuadMesh_b1pym")
