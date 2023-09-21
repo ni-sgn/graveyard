@@ -2,10 +2,18 @@ using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
+using DAL;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+
+builder.Services.AddDbContext<SocialLifeContext>( options => {
+  //options.UseMemoryCache(); //what does this do??? 
+  options.UseSqlServer("Server=localhost,1433;Database=DataHub;User=SA;Password=putStrLn $ p2ssw0rd;TrustServerCertificate=True;");
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
