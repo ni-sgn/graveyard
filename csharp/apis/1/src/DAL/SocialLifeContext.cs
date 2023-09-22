@@ -1,8 +1,4 @@
 ﻿namespace DAL;
-
-using Dapper;
-using Microsoft.Data.SqlClient;
-
 using Microsoft.EntityFrameworkCore;
 
 public class SocialLifeContext : DbContext {
@@ -10,9 +6,17 @@ public class SocialLifeContext : DbContext {
 
   }
 
-  private DbSet<DAL.entities.Person> people { get; set; }
+  private DbSet<entities.Person> people { get; set; }
 
   protected override void OnModelCreating(ModelBuilder modelBuilder) {
-    modelBuilder.Entity<DAL.entities.Person>().HasKey(nameof(DAL.entities.Person.custom_id));
+
+    modelBuilder.Entity<entities.Person>().HasKey(nameof(entities.Person.custom_id));
+    modelBuilder.Entity<entities.Mobile>().HasKey(nameof(entities.Mobile.mobile_number));
+    
+    modelBuilder.Entity<entities.Person>().HasMany<entities.Mobile>();
+    modelBuilder.Entity<entities.Mobile>().HasMany<entities.Person>();
+
+    modelBuilder.initialize();
+
   }
 }

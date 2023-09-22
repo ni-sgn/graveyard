@@ -4,6 +4,7 @@ using DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(SocialLifeContext))]
-    partial class SocialLifeContextModelSnapshot : ModelSnapshot
+    [Migration("20230922170814_added initial values")]
+    partial class addedinitialvalues
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,18 +42,6 @@ namespace DAL.Migrations
                     b.HasIndex("Personcustom_id");
 
                     b.ToTable("Mobile");
-
-                    b.HasData(
-                        new
-                        {
-                            mobile_number = "123123123",
-                            provider = "magti"
-                        },
-                        new
-                        {
-                            mobile_number = "321321321",
-                            provider = "magti"
-                        });
                 });
 
             modelBuilder.Entity("DAL.entities.Person", b =>
@@ -80,22 +71,6 @@ namespace DAL.Migrations
                     b.HasIndex("mobile_number");
 
                     b.ToTable("people");
-
-                    b.HasData(
-                        new
-                        {
-                            custom_id = 1,
-                            date_of_birth = new DateTime(2023, 9, 22, 21, 12, 42, 616, DateTimeKind.Local).AddTicks(7004),
-                            first_name = "nika",
-                            last_name = "saganelidze"
-                        },
-                        new
-                        {
-                            custom_id = 2,
-                            date_of_birth = new DateTime(2023, 9, 22, 21, 12, 42, 616, DateTimeKind.Local).AddTicks(7025),
-                            first_name = "nika's",
-                            last_name = "clone"
-                        });
                 });
 
             modelBuilder.Entity("DAL.entities.Mobile", b =>
