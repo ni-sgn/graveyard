@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DF44A754-137F-43C4-95B1-B52C3CB581CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api", "src\api\api.csproj", "{7F4858A7-CABD-42E0-A11E-475F71774489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application", "src\application\application.csproj", "{ED887B77-B598-49DF-8367-412AF2660A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dal", "src\dal\dal.csproj", "{82A1B12C-0FA1-4A33-B520-B751D0181984}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Debug|x64.Build.0 = Debug|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Debug|x86.Build.0 = Debug|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Release|x64.ActiveCfg = Release|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Release|x64.Build.0 = Release|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Release|x86.ActiveCfg = Release|Any CPU
+		{7F4858A7-CABD-42E0-A11E-475F71774489}.Release|x86.Build.0 = Release|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Release|x64.Build.0 = Release|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED887B77-B598-49DF-8367-412AF2660A88}.Release|x86.Build.0 = Release|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Debug|x64.Build.0 = Debug|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Debug|x86.Build.0 = Debug|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Release|x64.ActiveCfg = Release|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Release|x64.Build.0 = Release|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Release|x86.ActiveCfg = Release|Any CPU
+		{82A1B12C-0FA1-4A33-B520-B751D0181984}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F4858A7-CABD-42E0-A11E-475F71774489} = {DF44A754-137F-43C4-95B1-B52C3CB581CE}
+		{ED887B77-B598-49DF-8367-412AF2660A88} = {DF44A754-137F-43C4-95B1-B52C3CB581CE}
+		{82A1B12C-0FA1-4A33-B520-B751D0181984} = {DF44A754-137F-43C4-95B1-B52C3CB581CE}
+	EndGlobalSection
+EndGlobal
