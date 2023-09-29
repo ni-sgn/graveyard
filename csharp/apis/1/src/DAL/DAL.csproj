@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <PackageReference Include="dapper" Version="2.0.151" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
       <PackageReference Include="flurl" Version="3.0.7" />
       <PackageReference Include="MassTransit" Version="8.1.0" />
       <PackageReference Include="microsoft.data.sqlclient" Version="5.1.1" />

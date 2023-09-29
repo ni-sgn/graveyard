@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using business;
 using Microsoft.EntityFrameworkCore;
 using DAL;
+using Azure;
 
 namespace api.Controllers;
 
@@ -10,22 +11,22 @@ namespace api.Controllers;
 [Route("api/v{version:apiVersion}/[controller]/[action]")]
 public class MiscController : ControllerBase
 {
-    private static readonly string[] Summaries = new[] {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
     private readonly ILogger<MiscController> _logger;
     private readonly SocialLifeContext _context;
     private readonly PeopleOperations _po; 
+    private readonly IConfiguration _config;
 
-    public  MiscController(
+    public MiscController(
       ILogger<MiscController> logger,
-      SocialLifeContext context 
+      SocialLifeContext context,
+      IConfiguration config
       ) {
-        _logger = logger;
+        _logger  = logger;
         _context = context;
+        _config  = config;
+
         PeopleOperations po = new PeopleOperations(_context);
-        _po = po;
+        _po                 = po;
     }
 
     /// <summary>
@@ -38,9 +39,14 @@ public class MiscController : ControllerBase
       return "hello world";
     }
 
-    [HttpGet(Name = "OtherThanGet")]
-    public string Get2(){
-      return "something else";
+    /// <summary>
+    /// Get last_name of the user 
+    /// </summary>
+    /// <returns></returns>
+    [HttpGet(Name = "get-last-name")]
+    public string GetLastName(){
+      var name = DAL.DataOperations.GetName("thisDoesNotMatter", _config.GetConnectionString("DataHub") ?? throw new NotImplementedException());
+      return name; 
     }
 
     [HttpPost(Name = "AddPerson")]
