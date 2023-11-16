@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/disco/src/personal/playground/csharp/httpclient/src/Main.csproj": {}
+    "/home/disco/src/personal/graveyard/csharp/httpclient/src/Main.csproj": {}
   },
   "projects": {
-    "/home/disco/src/personal/playground/csharp/httpclient/src/Main.csproj": {
+    "/home/disco/src/personal/graveyard/csharp/httpclient/src/Main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/disco/src/personal/playground/csharp/httpclient/src/Main.csproj",
+        "projectUniqueName": "/home/disco/src/personal/graveyard/csharp/httpclient/src/Main.csproj",
         "projectName": "Main",
-        "projectPath": "/home/disco/src/personal/playground/csharp/httpclient/src/Main.csproj",
+        "projectPath": "/home/disco/src/personal/graveyard/csharp/httpclient/src/Main.csproj",
         "packagesPath": "/home/disco/.nuget/packages/",
-        "outputPath": "/home/disco/src/personal/playground/csharp/httpclient/src/obj/",
+        "outputPath": "/home/disco/src/personal/graveyard/csharp/httpclient/src/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/home/disco/.local/share/godot/mono/GodotNuGetFallbackFolder"
@@ -52,12 +52,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.24, 6.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.24, 6.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.24, 6.0.24]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/disco/.dotnet/sdk/6.0.411/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/disco/.dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -36,6 +36,7 @@ public class MiscController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public string Get()
     {
+      System.Console.WriteLine("Hello"); 
       return "hello world";
     }
 
@@ -45,14 +46,23 @@ public class MiscController : ControllerBase
     /// <returns></returns>
     [HttpGet(Name = "get-last-name")]
     public string GetLastName(){
-      var name = DAL.DataOperations.GetName("thisDoesNotMatter", _config.GetConnectionString("DataHub") ?? throw new NotImplementedException());
+      var name = DAL.DataOperations.GetName("thisDoesNotMatter",
+          _config.GetConnectionString("DataHub")
+          ?? throw new NotImplementedException());
       return name; 
     }
 
     [HttpPost(Name = "AddPerson")]
-    public ActionResult AddPerson(string firstname, string lastname, DateTime birthDate) {
+    public ActionResult AddPerson(
+        string firstname,
+        string lastname,
+        DateTime birthDate) {
       try {
-        _po.CreatePerson(new DAL.entities.Person{first_name = firstname, last_name = lastname, date_of_birth = birthDate});
+        _po.CreatePerson(new DAL.entities.Person{
+            first_name = firstname,
+            last_name = lastname,
+            date_of_birth = birthDate}
+            );
         return StatusCode(200);
       } catch (Exception ex) {
         _logger.LogError(ex, "something went wrong");

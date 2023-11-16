@@ -12,14 +12,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<SocialLifeContext>( options => {
   //options.UseMemoryCache(); //what does this do??? 
-  options.UseSqlServer("Server=localhost,1433;Database=DataHub;User=SA;Password=putStrLn $ p2ssw0rd;TrustServerCertificate=True;");
+  options.UseSqlServer("Server=localhost,1433; Database=DataHub; User=SA;Password=putStrLn $ p2ssw0rd; TrustServerCertificate=True;");
 });
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Learn more about configuring Swagger/OpenAPI at
+// https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen( options => {
-  options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "1"});
+  options.SwaggerDoc("v1",
+      new Microsoft.OpenApi.Models.OpenApiInfo {
+      Title = "My API", Version = "1"});
 
   var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"; 
   var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
