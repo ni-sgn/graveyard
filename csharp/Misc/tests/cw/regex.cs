@@ -14,4 +14,10 @@ public class regexTests {
     // assert
     Assert.True(result);
   }
+
+
+  [Fact]
+  public void Simple_test(){
+    Assert.Equal(1,2); 
+  }
 }

@@ -1,10 +1,7 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Versioning;
-using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
 using DAL;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<SocialLifeContext>( options => {
   //options.UseMemoryCache(); //what does this do??? 
-  options.UseSqlServer("Server=localhost,1433;Database=DataHub;User=SA;Password=putStrLn $ p2ssw0rd;TrustServerCertificate=True;");
+  options.UseSqlServer("Server=localhost,1433;Database=DataHub;User=SA;Password=P@ssw0rd;TrustServerCertificate=True;");
 });
 
 builder.Services.AddControllers();

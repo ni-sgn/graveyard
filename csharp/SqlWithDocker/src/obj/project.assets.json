@@ -2035,24 +2035,19 @@
     ]
   },
   "packageFolders": {
-    "/home/disco/.nuget/packages/": {},
-    "/home/disco/.local/share/godot/mono/GodotNuGetFallbackFolder": {}
+    "/home/nika/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/SqlDocker.csproj",
+      "projectUniqueName": "/home/nika/src/personal/graveyard/csharp/SqlWithDocker/src/SqlDocker.csproj",
       "projectName": "SqlDocker",
-      "projectPath": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/SqlDocker.csproj",
-      "packagesPath": "/home/disco/.nuget/packages/",
-      "outputPath": "/home/disco/src/personal/playground/csharp/SqlWithDocker/src/obj/",
+      "projectPath": "/home/nika/src/personal/graveyard/csharp/SqlWithDocker/src/SqlDocker.csproj",
+      "packagesPath": "/home/nika/.nuget/packages/",
+      "outputPath": "/home/nika/src/personal/graveyard/csharp/SqlWithDocker/src/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/home/disco/.local/share/godot/mono/GodotNuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "/home/disco/.nuget/NuGet/NuGet.Config",
-        "/home/disco/.nuget/NuGet/config/Godot.Offline.Config"
+        "/home/nika/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2101,7 +2096,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/disco/.dotnet/sdk/6.0.411/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/nika/.dotnet/sdk/6.0.414/RuntimeIdentifierGraph.json"
       }
     }
   }
