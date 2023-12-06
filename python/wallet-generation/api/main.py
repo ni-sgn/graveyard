@@ -10,6 +10,8 @@ import models.wallet_dto as wallet_dto
 cfg : configparser.ConfigParser = configparser.ConfigParser()
 settings = cfg.read('settings.cfg') 
 
+port = cfg.get('Host', 'port')
+
 app = fa.FastAPI()
 
 @app.get(
@@ -35,5 +37,8 @@ async def root(
         index : int = 44,
         hardened : bool = True
         ):
-    wallet = wallet_facade.HDWalletFacade(crypto, strength, language, passphrase, index, hardened)
-    return wallet.derive_wallet()
+    try:
+        wallet = wallet_facade.HDWalletFacade(crypto, strength.value, language.value, passphrase, index, hardened)
+        return wallet.derive_wallet()
+    except Exception as ex:
+        return fa.responses.JSONResponse(content={"error": str(ex)}, status_code=500)

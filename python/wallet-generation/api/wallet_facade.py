@@ -3,9 +3,6 @@ import hdwallet.utils
 import hdwallet.symbols
 import typing
 
-import json
-
-
 class HDWalletFacade():
     def __init__(self, symbol : str, strength : int, language : str, passphrase : str, index : int, hardened : bool):
         self._symbol : str = symbol
@@ -20,6 +17,6 @@ class HDWalletFacade():
         self._hdwallet.from_entropy(entropy=self._entropy, language=self._language, passphrase=self._passphrase)
 
     def derive_wallet(self):
-        self._hdwallet.from_index(44, hardened=self._hardened)
+        self._hdwallet.from_index(self._index, hardened=self._hardened)
         return self._hdwallet.dumps()
     

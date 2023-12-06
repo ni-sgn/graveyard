@@ -14,3 +14,4 @@ class StrengthEnum(int, Enum):
 
 class LanguageEnum(str, Enum):
     EN : str = 'english'
+    KOR : str = 'korean'
