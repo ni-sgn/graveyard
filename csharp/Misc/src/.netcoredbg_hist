@@ -1,0 +1,54 @@
+b Program.cs:11
+run
+step
+print i
+step
+print i
+step
+print i
+step
+print i
+print
+step
+print
+step
+print
+step
+print
+step
+next
+print
+next
+print
+continue
+b Program.cs:11
+start
+run
+frame
+exit
+quit
+b Add
+run
+frame
+print
+ls
+dir
+help
+help Program.cs
+command Program.cs
+source Program.cs
+frame
+frame 0x00007f831af9ac69
+n
+print a
+print b
+next
+print
+step
+help
+exec
+ex
+help
+next
+ex
+run

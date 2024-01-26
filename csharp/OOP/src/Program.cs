@@ -1,39 +1,34 @@
-﻿using System;
-using static System.Console;
+﻿public class A {
+ static A() {
+   Console.WriteLine("A static");
 
+ }
 
-public interface MockInterface {
-  void PrintGreeting();
-  int AddNumbers(int a, int b);
+ /*
+ public A() {
+   Console.WriteLine("A non-static");
+  }
+  */
 }
 
-public class MockImplementation1 : MockInterface {
-  public void PrintGreeting() {
-    WriteLine("This is first implementation");
+public class B : A {
+  static B() {
+    Console.WriteLine("B static");
   }
 
-  public int AddNumbers(int a, int b) {
-    return a + b;  
+  /*
+  public B() {
+    Console.WriteLine("B non-static");
   }
+  */
 }
 
-public class MockImplementation2 : MockInterface {
-  public void PrintGreeting() {
-    WriteLine("This is second implementation");
-  }
-
-  public int AddNumbers(int a, int b) {
-    return a + b + 1;  
-  }
-}
-
-
-public class Progam {
+public class Program {
   public static void Main(string[] args) {
-    MockInterface mocked = new MockImplementation1();
-    MockInterface mockedAgain = new MockImplementation2();
-
-    mocked.PrintGreeting();
-    mockedAgain.PrintGreeting();
-  } 
+    B b = new B();
+    B z = new B();
+    Console.WriteLine("Hello world");
+  }
 }
+
+
