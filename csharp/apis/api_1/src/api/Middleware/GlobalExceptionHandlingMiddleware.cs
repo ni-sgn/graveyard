@@ -1,6 +1,6 @@
 namespace api.Middleware;
 
-public class GlobalExceptionHandlingMiddleware
+public class GlobalExceptionHandlingMiddleware 
 {
     private readonly RequestDelegate _next;
     private readonly ILogger _logger;
