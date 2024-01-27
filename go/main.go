@@ -3,30 +3,41 @@ package main
 import (
 	"fmt"
 	"time"
+
+	"github.com/nikasept/go-api/dtos"
 )
 
-type Person struct {
-	first_name string
-	last_name  string
-	age        int
-}
-
-func (p Person) changePerson() (Person, error) {
-	return Person{"John", "White", 3}, nil
+func addition(x int, y int) int {
+	fmt.Println("hello, this is asynchronous")
+	return x + y
 }
 
 func main() {
 
-	var person Person = Person{"a", "b", 3}
-	var e error = nil
+	var person dtos.Person = dtos.Person{First_name: "a", Last_name: "b", Age: 3}
+	var point *dtos.Person = &person
+	//chan_1 := make(chan string)
 
 	go func() {
-		time.Sleep(3 * time.Second)
+		for {
+			time.Sleep(1 / 100 * time.Second)
+			fmt.Println("Concurrent print")
+			//chan_1 <- "I'm finish executing an concurrent print"
+		}
 	}()
+
+	go addition(3, 4)
+
+	fmt.Println("Current thread exec")
+
+	//val_from_concurrent := <-chan_1
+	//fmt.Println(val_from_concurrent)
+	time.Sleep(10 * time.Second)
 
 	// I think this would be a terrible thing
 	// If there were not a garbage collector
-	person, e = person.changePerson()
-	fmt.Println(e)
-	fmt.Printf("%s\n%s\n%d\n", person.first_name, person.last_name, person.age)
+	person, _ = dtos.ChangePerson(point)
+
+	fmt.Printf("%s\n%s\n%d\n", person.First_name, person.Last_name, person.Age)
+
 }
