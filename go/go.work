@@ -1,3 +1,6 @@
 go 1.21.6
 
-use ./json
+use (
+	./concurrency_1
+	./json
+)
