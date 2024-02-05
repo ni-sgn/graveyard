@@ -8,7 +8,8 @@ import (
 
 func main() {
 
-	lock := sync.Mutex()
+	lock := sync.Mutex{}
+	lock.Lock()
 	for i := 0; i < 3; i++ {
 		go func(i int) {
 			for {
