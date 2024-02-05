@@ -62,3 +62,6 @@
 
 # Resources
     https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+
+# To revert untracked files you have to force clean them
+git clean -f [filename | folder] 
