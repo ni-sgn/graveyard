@@ -22,5 +22,8 @@ func main() {
 	// it supposed to be nil
 	// and it is
 	fmt.Println(req.Body)
+	client := http.DefaultClient
+
+	client.Do(req)
 
 }
