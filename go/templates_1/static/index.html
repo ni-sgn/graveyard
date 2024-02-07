@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+       <p> 
+           My website When is that event triggered ?
+       </p> 
+
+       <div id="sse-data"></div>
+    <script>
+        // Establish SSE connection
+        var eventSource = new EventSource('/events');
+
+        // Handle incoming events
+        eventSource.onmessage = function(event) {
+            // Display the received data
+            document.getElementById('sse-data').innerText += event.data + '\n';
+        };
+
+        // Handle errors
+        eventSource.onerror = function(event) {
+            console.error('Error occurred:', event);
+            // You can handle connection errors here
+        };
+    </script>
+    </body>
+</html>
